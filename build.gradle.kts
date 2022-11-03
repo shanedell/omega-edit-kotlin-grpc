@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     kotlin("jvm") version "1.6.10"
     id("com.google.protobuf") version "0.8.18" apply false
@@ -12,6 +10,7 @@ ext["grpcVersion"] = "1.49.2"
 ext["grpcKotlinVersion"] = "1.3.0" // CURRENT_GRPC_KOTLIN_VERSION
 ext["protobufVersion"] = "3.21.7"
 ext["coroutinesVersion"] = "1.6.2"
+ext["omegaEditVersion"] = "0.9.23"
 
 repositories {
     mavenCentral()
@@ -31,5 +30,3 @@ allprojects {
 
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
 }
-
-//tasks.create("assemble").dependsOn(":server:installDist")

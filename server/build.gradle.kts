@@ -33,9 +33,9 @@ dependencies {
 
     implementation("io.arrow-kt:arrow-core:1.1.2")
 
-    implementation("com.ctc:omega-edit-spi_2.13:0.9.21")
-    implementation("com.ctc:omega-edit-native_2.13:0.9.21:macos-64")
-    implementation("com.ctc:omega-edit_2.13:0.9.21")
+    implementation("com.ctc:omega-edit-spi_2.13:${rootProject.ext["omegaEditVersion"]}")
+    implementation("com.ctc:omega-edit-native_2.13:${rootProject.ext["omegaEditVersion"]}:macos-64")
+    implementation("com.ctc:omega-edit_2.13:${rootProject.ext["omegaEditVersion"]}")
 }
 
 tasks.register<JavaExec>("OmegaEditServer") {
