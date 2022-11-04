@@ -6,9 +6,9 @@ plugins {
 
 group = "com.sdell"
 version = "1.0-SNAPSHOT"
-ext["grpcVersion"] = "1.49.2"
+ext["grpcVersion"] = "1.50.2"
 ext["grpcKotlinVersion"] = "1.3.0" // CURRENT_GRPC_KOTLIN_VERSION
-ext["protobufVersion"] = "3.21.7"
+ext["protobufVersion"] = "3.21.9"
 ext["coroutinesVersion"] = "1.6.2"
 ext["omegaEditVersion"] = "0.9.23"
 

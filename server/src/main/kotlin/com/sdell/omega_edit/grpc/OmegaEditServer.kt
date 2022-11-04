@@ -1,12 +1,13 @@
 package com.sdell.omega_edit.grpc
 
 import io.grpc.Server
-import io.grpc.ServerBuilder
+import io.grpc.netty.NettyServerBuilder
+import java.net.InetSocketAddress
 
 class OmegaEditServer(private val port: Int) {
     private val editorService = EditorService()
-    private val server: Server = ServerBuilder
-        .forPort(port)
+    private val server: Server = NettyServerBuilder
+        .forAddress(InetSocketAddress("127.0.0.1", port))
         .addService(editorService)
         .build()
 
